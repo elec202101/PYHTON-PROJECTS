@@ -1,0 +1,24 @@
+name = input("Type your name: ")
+print("Welcome", name, "to this adventure!")
+
+answer = input("You are on a dirt road and it has come to an end. Do you want to go left or right? Type 'left' or 'right'").lower()
+if answer == "left":
+    print("You have come to a river. Do you want to swim across or walk along? Swim/walk")
+    if answer == "swim":
+        print("The current is really strong and it's dragging you away. Do you keep swimming or come out of the river? Swim/out")
+        if answer == "swim":
+            print("Brave choice but the wrong one, you drown :(")
+        elif answer == "out":
+            print("Well, that was a close call! You're drenched but alive. Let's get walking")
+    elif answer == "walk":
+        print("Good choice. You walk for a while and come to a large house with two doors, one white and one black. Which do you choose? White/black")
+        if answer == "white":
+            print("You've been captured by the house feral children, wrong choice!")
+        elif answer == "black":
+            print("What's that on the floor? Oh, a gun and a knife...you can choose one: gun/knife")
+    else:
+        print("You've come to a dead end. You lose :(")
+elif answer == "right":
+    print()
+else:
+    print("You've come to a dead end. You lose :(")
